@@ -225,6 +225,52 @@
   }
   .blank:active{ filter: brightness(0.9); }
 
+  .vocab-toolbar{
+    display:flex;
+    gap: 8px;
+    margin: 10px 0 12px;
+  }
+  .vocab-toolbar button{
+    flex: 1;
+    border: 1.5px solid var(--red);
+    background: #fff;
+    color: var(--red-dark);
+    padding: 7px 6px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .vocab-toolbar button:active{ background: var(--red); color:#fff; }
+
+  .vocab-list{ margin: 0; }
+  .vocab-row{
+    display:flex;
+    align-items:center;
+    gap: 10px;
+    padding: 7px 0;
+    border-bottom: 1px dashed var(--card-border);
+  }
+  .vocab-row:last-child{ border-bottom: none; }
+  .vocab-en{ flex: 1.1; font-weight: 600; font-size: 13.5px; }
+  .vocab-ja{ flex: 1; text-align: right; font-size: 13px; }
+
+  .word-blank, .meaning-blank{
+    display: inline-block;
+    background: var(--red);
+    color: transparent;
+    border-radius: 3px;
+    padding: 1px 5px;
+    cursor: pointer;
+    transition: background 0.12s ease, color 0.12s ease;
+  }
+  .word-blank.revealed, .meaning-blank.revealed{
+    background: transparent;
+    color: var(--red-dark);
+    font-weight: 700;
+    padding: 1px 0;
+  }
+  .word-blank:active, .meaning-blank:active{ filter: brightness(0.9); }
+
   footer{
     text-align:center;
     font-size: 10.5px;
@@ -615,6 +661,171 @@ const DECKS = [
   "don't have to go to special classes → **不必要（必要・義務の否定）**",
   "had to help on the farm → **mustの過去形（必要・義務）**"
  ]}
+]},
+{"id": "eitango", "name": "英単語テスト", "subtitle": "Reading Passage 2〜9", "type": "vocab", "sections": [
+{"title": "Reading Passage 2：Singapore's Chingay Parade", "words": [
+ {"en": "economically", "ja": "経済的に"},
+ {"en": "lies", "ja": "位置する"},
+ {"en": "at the tip of the Malay Peninsula", "ja": "マレー半島の先端に"},
+ {"en": "population", "ja": "人口"},
+ {"en": "5.5 million", "ja": "550万"},
+ {"en": "city-state", "ja": "都市国家"},
+ {"en": "metropolitan Tokyo", "ja": "東京23区"},
+ {"en": "cover~", "ja": "~に及ぶ"},
+ {"en": "official languages", "ja": "公用語"},
+ {"en": "Singaporean", "ja": "シンガポール人"},
+ {"en": "take pride in~", "ja": "~を誇りに思う"},
+ {"en": "multicultural society", "ja": "多文化社会"},
+ {"en": "evil spirit", "ja": "悪霊"},
+ {"en": "put a ban on~", "ja": "~を禁止する"},
+ {"en": "gradually", "ja": "徐々に"},
+ {"en": "professional", "ja": "専門家"},
+ {"en": "suburban community groups", "ja": "郊外のコミュニティグループ"},
+ {"en": "as soon as", "ja": "~するとすぐに"},
+ {"en": "look forward to", "ja": "楽しみに待つ"},
+ {"en": "harmony", "ja": "調和"},
+ {"en": "restriction", "ja": "制限"},
+ {"en": "regulation", "ja": "規則"}
+]},
+{"title": "Reading Passage 3：English, for Better or for Worse", "words": [
+ {"en": "expand into a global language", "ja": "世界的な言語へと発展する"},
+ {"en": "millions of people", "ja": "数百万の人々"},
+ {"en": "depend on", "ja": "頼る"},
+ {"en": "for better or for worse", "ja": "良かれ悪しかれ"},
+ {"en": "scholar(s)", "ja": "学者"},
+ {"en": "disagree", "ja": "反対する"},
+ {"en": "is a boon for", "ja": "~にとって恩恵である"},
+ {"en": "so do~", "ja": "~もそうである"},
+ {"en": "help oneself get better at writing", "ja": "自分で努力して書くことが上手になる"},
+ {"en": "with the increase", "ja": "増加とともに"},
+ {"en": "the number of books on themes such as grammar and punctuation", "ja": "文法や句読点などのテーマについての本の数"},
+ {"en": "primary school", "ja": "小学校"},
+ {"en": "entertaining", "ja": "面白い"},
+ {"en": "story book", "ja": "物語の本"},
+ {"en": "take~ for example", "ja": "~を例にとる"},
+ {"en": "an e-mail...reads well", "ja": "読みやすい電子メール"},
+ {"en": "the differences between A and B", "ja": "AとBの違い"},
+ {"en": "communicate your ideas", "ja": "あなたの考えを伝える"}
+]},
+{"title": "Reading Passage 4：How Important Is Education to You", "words": [
+ {"en": "in common", "ja": "共通な"},
+ {"en": "neither of", "ja": "どちらも~ない"},
+ {"en": "higher education", "ja": "高等教育"},
+ {"en": "both of", "ja": "両方とも"},
+ {"en": "mechanic", "ja": "整備士"},
+ {"en": "electrician", "ja": "電気工事士"},
+ {"en": "go back to school", "ja": "学校に戻る"},
+ {"en": "get a degree", "ja": "学位を取る"},
+ {"en": "follow their dream", "ja": "夢を追求する"},
+ {"en": "value~", "ja": "~に価値を置く"},
+ {"en": "the United Nations", "ja": "国際連合"},
+ {"en": "at the head of this movement", "ja": "この運動の先頭に"},
+ {"en": "she was shot", "ja": "彼女は撃たれた"},
+ {"en": "discuss", "ja": "話し合う"},
+ {"en": "improve education worldwide", "ja": "世界中で教育を向上させる"}
+]},
+{"title": "Reading Passage 5：From Anime to Zen", "words": [
+ {"en": "hold~", "ja": "~を開催する"},
+ {"en": "annual Japan Expo", "ja": "毎年恒例のジャパンエキスポ"},
+ {"en": "cosplay outfits", "ja": "コスプレ衣装"},
+ {"en": "imitating", "ja": "まねる"},
+ {"en": "costumes", "ja": "衣装"},
+ {"en": "anime stuff", "ja": "アニメ関連のもの"},
+ {"en": "experience", "ja": "経験する"},
+ {"en": "the popularity of Japanese things", "ja": "日本の物の人気"},
+ {"en": "amaze~", "ja": "~をびっくりさせる"},
+ {"en": "Japanism", "ja": "日本風"},
+ {"en": "influence", "ja": "影響する"},
+ {"en": "Japanese animated films", "ja": "日本のアニメ映画"},
+ {"en": "entertainment", "ja": "娯楽"},
+ {"en": "led to", "ja": "~を引き起こした"},
+ {"en": "addition", "ja": "追加"},
+ {"en": "get added to a dictionary", "ja": "辞書に追加される"},
+ {"en": "research", "ja": "調査"}
+]},
+{"title": "Reading Passage 6：The Storm", "words": [
+ {"en": "roar", "ja": "とどろき"},
+ {"en": "creek", "ja": "川"},
+ {"en": "running very high", "ja": "水位が高くなる"},
+ {"en": "had better", "ja": "~すべきである"},
+ {"en": "flashlight", "ja": "懐中電灯"},
+ {"en": "I won't be long.", "ja": "すぐ戻る"},
+ {"en": "electricity", "ja": "電気"},
+ {"en": "lightning", "ja": "稲妻"},
+ {"en": "light up (light-lit-lit)", "ja": "~を明るく照らす"},
+ {"en": "gushing", "ja": "湧き出る"},
+ {"en": "grassy pathway", "ja": "草地で覆われた小道"},
+ {"en": "empty Styrofoam box", "ja": "空の発泡スチロールの箱"},
+ {"en": "burn low", "ja": "火力が弱まる"},
+ {"en": "last", "ja": "持ちこたえる"},
+ {"en": "my mind began to race", "ja": "私の心ははやり始めた"},
+ {"en": "raging river", "ja": "荒れ狂う川"},
+ {"en": "be in danger", "ja": "危機にひんしている"},
+ {"en": "pack A with B", "ja": "AにBを詰める"},
+ {"en": "canned food", "ja": "缶詰の食べ物"},
+ {"en": "Don't be silly!", "ja": "バカなことを言うな"},
+ {"en": "flood", "ja": "水浸しになる"},
+ {"en": "ease off", "ja": "和らぐ"}
+]},
+{"title": "Reading Passage 7：Public Works for the State and for the Citizens", "words": [
+ {"en": "mystery", "ja": "謎"},
+ {"en": "along with", "ja": "~とともに"},
+ {"en": "scholars from various fields", "ja": "様々な分野からの学者"},
+ {"en": "historian(s)", "ja": "歴史学者"},
+ {"en": "anthropologist(s)", "ja": "人類学者"},
+ {"en": "architect(s)", "ja": "建築家"},
+ {"en": "engineer(s)", "ja": "技師"},
+ {"en": "pyramid(s)", "ja": "ピラミッド"},
+ {"en": "man-made structure", "ja": "人工の建物"},
+ {"en": "construction", "ja": "建設"},
+ {"en": "prosper(ed)", "ja": "繁栄する"},
+ {"en": "theories (theory)", "ja": "学説"},
+ {"en": "led (lead)", "ja": "通じる"},
+ {"en": "French architect", "ja": "フランス人建築家"},
+ {"en": "publish", "ja": "出版する"},
+ {"en": "work on~", "ja": "~を研究する"},
+ {"en": "tomb", "ja": "墓"},
+ {"en": "slave(s)", "ja": "奴隷"},
+ {"en": "public works", "ja": "公共事業"},
+ {"en": "take time off", "ja": "休暇を取る"},
+ {"en": "hangovers", "ja": "二日酔い"}
+]},
+{"title": "Reading Passage 8：Riding an Old Steam Train", "words": [
+ {"en": "climbed up into", "ja": "乗り込んだ"},
+ {"en": "steam train", "ja": "蒸気機関車"},
+ {"en": "All aboard!", "ja": "皆さんご乗車ください"},
+ {"en": "lead A to B", "ja": "AをBまで案内する"},
+ {"en": "leather-covered seats", "ja": "革張りの座席"},
+ {"en": "compartment", "ja": "客室"},
+ {"en": "seat~", "ja": "~人分の座席を持つ"},
+ {"en": "must have been", "ja": "~であったに違いない"},
+ {"en": "first-class car", "ja": "一等車"},
+ {"en": "conductor", "ja": "車掌"},
+ {"en": "excursion", "ja": "小旅行"},
+ {"en": "passengers", "ja": "乗客"},
+ {"en": "get out", "ja": "降りる"},
+ {"en": "was fascinated with", "ja": "~に魅了された"},
+ {"en": "pull out of~", "ja": "~から出て行く"}
+]},
+{"title": "Reading Passage 9：Farm Stays", "words": [
+ {"en": "take a break", "ja": "中断する"},
+ {"en": "take short trips overseas", "ja": "海外への短期旅行をする"},
+ {"en": "length of stay", "ja": "滞在期間"},
+ {"en": "varies (vary)", "ja": "異なる"},
+ {"en": "pick up a language", "ja": "言語を習得する"},
+ {"en": "do volunteer work", "ja": "ボランティアとして働く"},
+ {"en": "kindergartens", "ja": "幼稚園"},
+ {"en": "orphanages", "ja": "児童養護施設"},
+ {"en": "working holiday visa", "ja": "ワーキングホリデービザ"},
+ {"en": "work for wages", "ja": "賃金を得て働く"},
+ {"en": "Holland", "ja": "オランダ"},
+ {"en": "stay on a farm", "ja": "農場に滞在する"},
+ {"en": "look after~", "ja": "~の世話をする"},
+ {"en": "on a daily basis", "ja": "毎日"},
+ {"en": "farming", "ja": "農業"},
+ {"en": "rural cuisine", "ja": "田舎の料理"},
+ {"en": "tour around", "ja": "旅をして回る"}
+]}
 ]}
 ];
 
@@ -677,7 +888,35 @@ function openDeck(deckIdx){
   deckToolbar.style.display = "flex";
   hintNote.textContent = "赤い部分をタップで解答表示／見出しタップで開閉";
 
-  deckView.innerHTML = deck.sections.map((section, idx) => `
+  const isVocabDeck = deck.type === "vocab";
+
+  deckView.innerHTML = deck.sections.map((section, idx) => {
+    if(isVocabDeck){
+      return `
+        <div class="card vocab-card">
+          <div class="card-head" data-idx="${idx}">
+            <div class="tab">${idx+1}</div>
+            <div class="card-title">${escapeHtml(section.title)}</div>
+            <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </div>
+          <div class="card-body">
+            <div class="vocab-toolbar">
+              <button class="vocab-toggle-word">単語シートを開閉</button>
+              <button class="vocab-toggle-meaning">意味シートを開閉</button>
+            </div>
+            <div class="vocab-list">
+              ${section.words.map(w => `
+                <div class="vocab-row">
+                  <span class="vocab-en"><span class="word-blank">${escapeHtml(w.en)}</span></span>
+                  <span class="vocab-ja"><span class="meaning-blank">${escapeHtml(w.ja)}</span></span>
+                </div>
+              `).join("")}
+            </div>
+          </div>
+        </div>
+      `;
+    }
+    return `
     <div class="card">
       <div class="card-head" data-idx="${idx}">
         <div class="tab">${idx+1}</div>
@@ -696,7 +935,12 @@ function openDeck(deckIdx){
         </ul>
       </div>
     </div>
-  `).join("");
+  `;
+  }).join("");
+
+  if(isVocabDeck){
+    hintNote.textContent = "見出しタップで開閉／単語・意味は個別タップ、または上のボタンでまとめて表示";
+  }
 
   deckView.querySelectorAll(".card-head").forEach(head => {
     head.addEventListener("click", () => {
@@ -713,7 +957,7 @@ function openDeck(deckIdx){
     });
   });
 
-  deckView.querySelectorAll(".blank").forEach(el => {
+  deckView.querySelectorAll(".blank, .word-blank, .meaning-blank").forEach(el => {
     el.addEventListener("click", (e) => {
       e.stopPropagation();
       el.classList.toggle("revealed");
@@ -721,6 +965,30 @@ function openDeck(deckIdx){
       if(body && body.parentElement.classList.contains("open")){
         body.style.maxHeight = body.scrollHeight + "px";
       }
+    });
+  });
+
+  deckView.querySelectorAll(".vocab-toggle-word").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const card = btn.closest(".card");
+      const blanks = card.querySelectorAll(".word-blank");
+      const allRevealed = [...blanks].every(b => b.classList.contains("revealed"));
+      blanks.forEach(b => b.classList.toggle("revealed", !allRevealed));
+      const body = card.querySelector(".card-body");
+      if(card.classList.contains("open")) body.style.maxHeight = body.scrollHeight + "px";
+    });
+  });
+
+  deckView.querySelectorAll(".vocab-toggle-meaning").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const card = btn.closest(".card");
+      const blanks = card.querySelectorAll(".meaning-blank");
+      const allRevealed = [...blanks].every(b => b.classList.contains("revealed"));
+      blanks.forEach(b => b.classList.toggle("revealed", !allRevealed));
+      const body = card.querySelector(".card-body");
+      if(card.classList.contains("open")) body.style.maxHeight = body.scrollHeight + "px";
     });
   });
 
@@ -732,11 +1000,11 @@ function openDeck(deckIdx){
 backBtn.addEventListener("click", renderHome);
 
 document.getElementById("revealAllBtn").addEventListener("click", () => {
-  deckView.querySelectorAll(".blank").forEach(el => el.classList.add("revealed"));
+  deckView.querySelectorAll(".blank, .word-blank, .meaning-blank").forEach(el => el.classList.add("revealed"));
   deckView.querySelectorAll(".card.open .card-body").forEach(b => b.style.maxHeight = b.scrollHeight + "px");
 });
 document.getElementById("hideAllBtn").addEventListener("click", () => {
-  deckView.querySelectorAll(".blank").forEach(el => el.classList.remove("revealed"));
+  deckView.querySelectorAll(".blank, .word-blank, .meaning-blank").forEach(el => el.classList.remove("revealed"));
   deckView.querySelectorAll(".card.open .card-body").forEach(b => b.style.maxHeight = b.scrollHeight + "px");
 });
 document.getElementById("expandAllBtn").addEventListener("click", (e) => {
